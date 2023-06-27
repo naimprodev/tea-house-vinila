@@ -150,6 +150,8 @@
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows: repeat(4, 1fr); */
     gap: 40px;
+    width: 100%;
+    max-width: 800px;
 }
 .one{
    background: linear-gradient(to right, #d4d3d2, white);
@@ -208,7 +210,7 @@
         flex-direction: column;
         text-align: center;
     }
-    .products-list .tea-container{
+    .products-list {
         grid-template-columns: repeat(1, 1fr);
     }
     .tea{
@@ -216,6 +218,11 @@
     }
     .tea-description{
         text-align: center;
+    }
+    .tea-container{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+
     }
 
 }
@@ -237,6 +244,13 @@
     .tea{
         flex-direction: column-reverse;
         padding: 5px 0;
+    }
+    .tea-description{
+        text-align: center;
+    }
+    .tea-container{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
     }
 }
 
