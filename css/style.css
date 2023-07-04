@@ -200,13 +200,87 @@
 
 /* ------------------------------------------------------------------------------------------------------------------                                            tea section style finish
 ------------------------------------------------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------------------------------------------------                                            clients section style 
+------------------------------------------------------------------------------------------------------------------*/
+.clients{
+    background-color: red;
+    width: 100%;
+    max-width: 1600px;
+    background-image: url(../images/cup2.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center bottom;
+    margin: 0 auto;
+    height: 60vh;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 0 70px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    background-blend-mode: multiply;
+
+
+}
+.clients-heading{
+    font-size: var(--secondary-font);
+    font-weight: var(--secondary-font);
+    color: white;
+    margin-bottom: 30px;
+}
+.clients-title{
+    font-style: var(--Tartary-font);
+    font-weight: var(--tartary-width);
+    color: white;
+    margin-bottom: 30px;
+}
+.clients-btn{
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: white;
+}
+.clients-details{
+    background-color: white;
+    border-radius: 5px;
+    padding: 50px;
+    display: flex;
+}
+.clients-img{
+    position: relative;
+    top: -70px;
+    left: -70px;
+}
+.name-heading{
+    color: var(--dark-gray);
+    font-weight: 400;
+    font-size: var(--Tartary-font);
+    margin-bottom: 20px;
+}
+.name{
+    font-weight: bold;
+    font-size: var(--Tartary-font);
+}
+.name-title{
+    color: #5D5A6F;
+    font-weight: 500;
+    font-size: var(--Tartary-font);
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------                                            clients section style finish
+------------------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------------------                                            media quires
 ------------------------------------------------------------------------------------------------------------------*/
 
 /* android media quires */
 @media only screen and (max-width: 577px) {
 
-    .banner {
+    .banner, .clients {
         flex-direction: column;
         text-align: center;
     }
@@ -224,6 +298,9 @@
         text-align: center;
 
     }
+    .clients-details{
+        flex-direction: column;
+    }
 
 }
 
@@ -233,7 +310,7 @@
 /* tablet media quires */
 
 @media only screen and (min-width: 576px) and (max-width: 980px) {
-    .banner {
+    .banner, .clients {
         flex-direction: column;
         text-align: center;
         padding: 5px 0;
