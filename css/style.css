@@ -335,6 +335,92 @@
 
 /* ------------------------------------------------------------------------------------------------------------------                                            news section style finish
 ------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------                                            footer section style start
+------------------------------------------------------------------------------------------------------------------*/
+footer{
+    background-color: lightgray;
+    padding: 130px 0;
+    width: 100%;
+    margin: 100px 0 0 0;
+}
+.foot{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.order{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.order-description{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.order-title{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--dark-pink);
+}
+.order-btn{
+    color: white;
+    background: linear-gradient(to right, #FF8938, #F00);
+    border: 0;
+    border-radius: 5px;
+    padding: 20px 35px;
+}
+
+.service-details{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    margin-bottom: 100px;
+}
+.links li, .service li,
+.help li{
+    list-style: none;
+    font-weight: bold;
+    color: var(--dark-pink);
+    margin: 10px 0;
+}
+.user-title{
+    margin-bottom: 15px;
+}
+.user-input{
+    border: 0;
+    border-bottom: 1px solid #000;
+    color: #494949;
+    background-color: lightgray;
+    padding: 15px 0;
+    margin-bottom: 50px;
+}
+.user-btn{
+    border: 0;
+    font-size: 30px;
+    color: white;
+    background: linear-gradient(to right, #FF8938, #F00 );
+    padding: 5px;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+}
+.icons{
+    display: flex;
+    gap: 24px;
+}
+.copyright-title{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------                                            footer section style finish
+------------------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------------------                                            media quires
 ------------------------------------------------------------------------------------------------------------------*/
 
@@ -361,6 +447,17 @@
     }
     .clients{
         flex-direction: column;
+        margin-top: 5px;
+    }
+    .order{
+        flex-direction: column;
+    }
+    .order-description{
+        flex-direction: column;
+    }
+    .service-details{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
     }
 
 }
