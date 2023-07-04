@@ -212,7 +212,6 @@
     background-size: 300px;
     background-position: center bottom;
     margin: 0 auto;
-    height: 60vh;
     margin-bottom: 100px;
     display: flex;
     padding: 0 70px;
@@ -342,7 +341,7 @@
 /* android media quires */
 @media only screen and (max-width: 577px) {
 
-    .banner, .clients {
+    .banner {
         flex-direction: column;
         text-align: center;
     }
@@ -359,6 +358,9 @@
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
 
+    }
+    .clients{
+        flex-direction: column;
     }
 
 }
